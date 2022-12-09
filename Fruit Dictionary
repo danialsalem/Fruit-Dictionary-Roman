@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Dictionary<string, string> FruitList = new Dictionary<string, string>();
+        FruitList.Add("Mango", "Aam");
+        FruitList.Add("Apple", "Saib");
+        FruitList.Add("Orange", "Malta");
+        FruitList.Add("Watrermelon", "Tarbooz");
+        FruitList.Add("Banana", "Kela");
+        FruitList.Add("Grape", "Angoor");
+        FruitList.Add("Pear", "Nashpati");
+        FruitList.Add("Peach", "Aaro");
+        FruitList.Add("Apricot", "Khubani");
+        FruitList.Add("Coconut", "Narial");
+
+        Console.WriteLine("Enter Word: ");
+        string word = Console.ReadLine();
+
+        foreach (var item in FruitList)
+        {
+            string keyword = item.Key;
+            string keyvalue = item.Value;
+            if (word == keyword)
+            {
+                Console.WriteLine("Meaning is:" + keyvalue);
+            }
+        }
+    }
+}
